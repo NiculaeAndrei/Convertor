@@ -4,6 +4,31 @@ using namespace std;
 
 
 
+void print_menu()
+{cout<<"Converter";
+cout<<"----------------------------------------"<<endl;
+cout<<"1:  Lungime"<<endl;
+cout<<"2:  Arie"<<endl;
+cout<<"3:  Volum"<<endl;
+cout<<"4:  Timp"<<endl;
+cout<<"5:  Viteza"<<endl;
+cout<<"6:  Temperatura"<<endl;
+cout<<"7:  Masa"<<endl;
+cout<<"8:  Energie"<<endl;
+cout<<"9:  Presiune"<<endl;
+cout<<"10: Densitate"<<endl;
+cout<<"11: Consum combustibil"<<endl;
+
+
+}
+
+
+
+
+
+
+
+
 float lungime_m_to_cm(float value)
 {
 
@@ -157,8 +182,199 @@ float temperature_fahrenheit_to_kelvin(float value)
 }
 
 
-int main()
+
+//presiune
+float presiune_bar_to_psi(float value)
 {
+
+return value*14.5038;
+
+}
+
+
+float presiune_psi_to_bar(float value)
+{
+
+return value*0.0689476;
+
+}
+
+//consum
+float consum_kpl_to_mpg(float value)
+{
+
+return value*2.824814362913;
+
+}
+
+
+float consum_mpg_to_kpl(float value)
+{
+
+return value*0.354006;
+
+}
+
+
+float consum_mpg_to_lphk(float value)
+{
+
+return 282/value;
+
+}
+
+
+
+float consum_lphk_to_mpg(float value)
+{
+
+return 282/value;
+
+}
+
+
+float consum_kpl_to_lphk(float value)
+{
+
+return 100/value;
+
+}
+
+
+
+float consum_lphk_to_kpl(float value)
+{
+
+return 100/value;
+
+}
+
+//energie
+float energie_joule_to_kilocalorie(float value)
+{
+
+return value*0.000239006;
+
+}
+
+
+float energie_kilocalorie_to_joule(float value)
+{
+
+return value*4184;
+
+}
+
+
+float energie_kilojoule_to_joule(float value)
+{
+
+return value*1000;
+}
+
+float energie_joule_to_kilojoule(float value)
+{
+
+return value*0.001;
+}
+
+float energie_kilocalorie_to_calorie(float value)
+{
+
+return value*1000;
+}
+
+float energie_calorie_to_kilocalorie(float value)
+{
+
+return value*0.001;
+
+}
+
+
+//aria
+
+float aria_sqk_to_hect(float value)
+{
+
+return value*100;
+
+}
+
+
+float aria_hect_to_sqk(float value)
+{
+
+return value*0.01;
+
+}
+
+
+float aria_hect_to_acre(float value)
+
+{
+
+return value*2.47105;
+
+}
+
+
+float aria_acre_to_hect(float value)
+
+{
+
+return value*0.404686;
+
+}
+
+
+float aria_sqk_to_sqmil(float value)
+{
+
+return value*0.386102;
+
+}
+
+
+float aria_sqmil_to_sqk(float value)
+{
+
+return value*0.258999;
+
+}
+
+
+//volum
+
+
+
+float volum_litre_to_pint(float value)
+
+{
+
+return value*1.75975;
+
+}
+
+
+
+float volum_pint_to_litre(float value)
+
+{
+
+return value*0.568261;
+
+}
+
+
+
+
+
+
+
+
+int main()
+{print_menu();
 
     float test=1;
 
